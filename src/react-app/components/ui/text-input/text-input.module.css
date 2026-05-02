@@ -1,0 +1,72 @@
+.input {
+  padding: 0;
+  margin: 0;
+  padding-block: var(--text-input-padding-block);
+  padding-inline: var(--text-input-padding-inline);
+  margin-block: 0;
+  margin-inline: 0;
+
+  color: var(--main-color);
+  background-color: var(--bg-variant-color);
+  letter-spacing: initial;
+  word-spacing: initial;
+  line-height: 1.5;
+  display: inline-block;
+  cursor: text;
+  border: none;
+  font-size: 1em;
+  min-width: unset;
+  max-width: unset;
+
+  border-radius: 0.5rem;
+  box-shadow: var(--neumo-inset-2), var(--primary-outline-shadow-0);
+
+  transition: box-shadow var(--ease-200), border-radius var(--ease-200);
+
+  &:focus {
+    box-shadow: var(--neumo-inset-2), var(--primary-outline-shadow-3);
+    outline: none;
+    border-radius: 1rem;
+  }
+
+  @media(any-hover: hover) {
+    &:hover {
+      border-radius: 1rem;
+    }
+  }
+}
+
+.floating-label {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-block: var(--text-input-padding-block);
+  margin-inline: calc(var(--text-input-padding-inline) - 0.5em);
+  padding-inline: 0.5em;
+  width: fit-content;
+  color: var(--main-variant-color);
+  background-color: var(--bg-variant-color);
+  box-shadow: var(--shadow-0);
+  border-radius: 0.5rem;
+  transform-origin: left;
+  transition:
+    scale var(--ease-200),
+    translate var(--ease-200),
+    box-shadow var(--ease-200),
+    background-color var(--ease-200);
+
+  &:is(.label:has(.input:is(:not(:placeholder-shown), :focus)) > *) {
+    scale: 0.8;
+    translate: 0 -1.5em;
+    box-shadow: var(--shadow-2);
+    background-color: var(--bg-color);
+  }
+}
+
+.label {
+  display: inline-block;
+  position: relative;
+  margin-block-start: 1.5rem;
+}

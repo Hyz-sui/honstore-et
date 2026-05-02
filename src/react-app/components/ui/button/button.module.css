@@ -1,0 +1,86 @@
+.button {
+  background: unset;
+  border: unset;
+  margin-block: 0;
+  margin-inline: 0;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  padding-block: 0;
+  padding-inline: 0;
+  --button-border-radius: 0.5rem;
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.button:not(.button-single) {
+  box-shadow: inset var(--primary-shadow-3), var(--background-inset-0);
+
+  --transition: border-radius var(--ease-200), box-shadow var(--ease-200);
+  transition: var(--transition);
+
+  &:not(.disabled):active {
+    box-shadow: inset var(--primary-shadow-0), var(--background-inset-3);
+  }
+
+  @media(any-hover: hover) {
+
+    &:not(.disabled):hover {
+      --button-border-radius: 1rem;
+    }
+  }
+
+  &.disabled {
+    cursor: unset;
+    opacity: 0.6;
+    box-shadow: inset var(--primary-shadow-0), var(--background-inset-3);
+  }
+}
+
+.button-content:not(:is(.button-single *)) {
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  position: relative;
+  translate: 0 calc(var(--shadow-offset-3) * -0.5);
+
+  transition: translate var(--ease-200);
+
+  &:is(.button:not(.disabled):active>*) {
+    translate: 0 calc(var(--shadow-offset-3) * 0.5);
+  }
+
+  &:is(.button.disabled>*) {
+    translate: 0 calc(var(--shadow-offset-3) * 0.5);
+  }
+}
+
+.button-filled.button-filled {
+  background-color: var(--primary-color);
+  color: var(--on-primary-color);
+}
+
+
+.button-outlined.button-outlined .outliner {
+  position: absolute;
+  inset: 1px 0;
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--button-border-radius);
+  translate: 0 calc(var(--shadow-offset-3) * -0.5 + 2px);
+  /* translate: inherit; */
+  transition: border-radius var(--ease-200);
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+}
+
+.button-elevated.button-elevated {
+  background-color: var(--bg-variant-color);
+  box-shadow: inset var(--in-shadow-3), var(--background-inset-0);
+
+  &:not(.disabled):active {
+    box-shadow: inset var(--in-shadow-0), var(--background-inset-3);
+  }
+}

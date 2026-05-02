@@ -1,0 +1,195 @@
+.store {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  transition: opacity var(--ease-300);
+
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+.link {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-variant-color);
+  border-radius: 0.5rem 0.5rem 0 0.5rem;
+  padding-block: 0.75rem;
+  padding-inline: 0.5rem;
+  overflow-wrap: anywhere;
+
+  box-shadow: inset var(--in-shadow-3), var(--background-inset-0);
+  color: var(--link-color);
+  transition: box-shadow var(--ease-200);
+
+  &.link-connect-to-descriptive-panel {
+    border-end-start-radius: 0;
+  }
+
+  &:active {
+    box-shadow: inset var(--in-shadow-0), var(--background-inset-3);
+  }
+}
+
+.store-name {
+  display: block;
+  border-block-end: 1px solid transparent;
+  width: fit-content;
+  margin-block: auto;
+  margin-inline: auto;
+  text-align: center;
+
+  transition: border var(--ease-200), translate var(--ease-200);
+
+  @media(any-hover: hover) {
+    &:is(.link:hover > *) {
+      border-block-end: 1px solid var(--link-color);
+    }
+  }
+}
+
+.external-icon {
+  font-size: 0.75rem;
+  vertical-align: text-top;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: var(--main-variant-color);
+  margin-block-start: 0.25rem;
+  margin-block-end: 0;
+  text-align: center;
+  transition: translate var(--ease-200);
+}
+
+:is(.link:active > *) {
+  translate: 0 calc(var(--shadow-offset-3) * 0.5);
+}
+
+.store-aside-contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.store-descriptive-panel {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding-block: 0.125rem;
+  padding-inline: 0.5rem;
+  border: 2px solid var(--border-color);
+  border-block-start: none;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 0.9rem;
+  color: var(--main-variant-color);
+  border-radius: 0.25rem;
+  padding-inline: 1rem;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.category-icon {
+  display: inline-block;
+  font-size: 1.125rem;
+}
+
+.store-action-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  width: fit-content;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: var(--bg-variant-color);
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+}
+
+.favorite-button {
+  display: block;
+  position: relative;
+  font-size: 1.1rem;
+  border-radius: inherit;
+  box-shadow: var(--shadow-3);
+  translate: 0 calc(var(--shadow-offset-3) * -1);
+  background-color: var(--bg-variant-color);
+  width: 4rem;
+  height: max(1.8rem, 100%);
+
+  transition: translate var(--ease-200), box-shadow var(--ease-200);
+
+  &:active {
+    translate: 0;
+    box-shadow: var(--shadow-0);
+  }
+
+  @media(pointer: coarse) {
+    font-size: 1.5rem;
+    width: max(4rem, 48px);
+    height: max(1.8rem, 48px);
+  }
+
+  &.favorite-button-favorite {
+    color: var(--primary-color);
+  }
+}
+
+.favorite-button-content {
+  height: 1.5rem;
+}
+
+.favorite-button-icon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  --scale-transition: scale var(--ease-300);
+  transition: rotate var(--bounce-3-300), var(--scale-transition), opacity var(--ease-200);
+  display: none;
+  rotate: 0deg;
+  scale: 0.9;
+
+  &.favorite-button-icon-favorite {
+    --scale-transition: scale var(--bounce-3-300);
+    scale: 1;
+  }
+
+  @starting-style {
+    &:is(.favorite-button-icon-favorite) {
+      scale: 0;
+    }
+
+    &:not(.favorite-button-icon-mid-favorite) {
+      rotate: -30deg;
+      scale: 0.4;
+    }
+
+    &.favorite-button-icon-mid-favorite {
+      opacity: 0;
+    }
+  }
+
+  &:is(.favorite-button.favorite-button-favorite .favorite-button-icon-favorite) {
+    display: block;
+  }
+
+  @media(any-hover: hover) {
+    &:is(.favorite-button:not(.favorite-button-favorite):is(:hover:not(:focus), :active) .favorite-button-icon-mid-favorite) {
+      display: block;
+      color: var(--primary-color);
+    }
+  }
+
+  &:is(.favorite-button:not(.favorite-button-favorite) .favorite-button-icon-not-favorite) {
+    display: block;
+  }
+}

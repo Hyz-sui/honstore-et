@@ -1,0 +1,21 @@
+:root {
+  --ease-100: ease 100ms;
+  --ease-200: ease 200ms;
+  --ease-300: ease 300ms;
+  --ease-400: ease 400ms;
+  --ease-500: ease 500ms;
+
+  --bounce-function-3: cubic-bezier(0.68, 0.55, 0.265, 1.55);
+  --bounce-3-100: var(--bounce-function-3) 100ms;
+  --bounce-3-200: var(--bounce-function-3) 200ms;
+  --bounce-3-300: var(--bounce-function-3) 300ms;
+  --bounce-3-400: var(--bounce-function-3) 400ms;
+  --bounce-3-500: var(--bounce-function-3) 500ms;
+
+  --bounce-function-4: cubic-bezier(0.68, 0.55, 0.265, 1.8);
+  --bounce-4-100: var(--bounce-function-4) 100ms;
+  --bounce-4-200: var(--bounce-function-4) 200ms;
+  --bounce-4-300: var(--bounce-function-4) 300ms;
+  --bounce-4-400: var(--bounce-function-4) 400ms;
+  --bounce-4-500: var(--bounce-function-4) 500ms;
+}

@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+  color: var(--link-color);
+  border-block-end: 1px solid transparent;
+
+  transition: border var(--ease-200);
+
+  @media(any-hover: hover) {
+    &:hover {
+      border-block-end: 1px solid var(--link-color);
+    }
+  }
+}

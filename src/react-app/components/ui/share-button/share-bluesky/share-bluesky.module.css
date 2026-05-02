@@ -1,0 +1,9 @@
+.share-bluesky.share-bluesky {
+  background-color: #004393;
+  color: #e0e0e0;
+  box-shadow: 0px calc(var(--shadow-offset-3) * -1) 0px #000d1d inset, var(--background-variant-inset-0);
+
+  &:not(.disabled):active {
+    box-shadow: 0px var(--shadow-offset-0) 0px #000d1d inset, var(--background-variant-inset-3);
+  }
+}

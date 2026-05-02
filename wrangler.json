@@ -1,17 +1,19 @@
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "honstore-et",
-	"main": "./src/worker/index.ts",
-	"compatibility_date": "2026-02-25",
-	"compatibility_flags": [
-		"nodejs_compat"
-	],
-	"observability": {
-		"enabled": true
-	},
-	"upload_source_maps": true,
-	"assets": {
-		"directory": "./dist/client",
-		"not_found_handling": "single-page-application"
-	}
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "honstore-et",
+  "main": "./src/worker/index.ts",
+  "compatibility_date": "2026-02-25",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "assets": {
+    "directory": "./dist/client",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true,
+    "binding": "ASSETS"
+  }
 }

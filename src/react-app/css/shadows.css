@@ -1,0 +1,78 @@
+:root {
+  --shadow-0: 0px var(--shadow-offset-0) 0px var(--shadow-dark-color);
+  --shadow-1: 0px var(--shadow-offset-1) 0px var(--shadow-dark-color);
+  --shadow-2: 0px var(--shadow-offset-2) 0px var(--shadow-dark-color);
+  --shadow-3: 0px var(--shadow-offset-3) 0px var(--shadow-dark-color);
+  --shadow-4: 0px var(--shadow-offset-4) 0px var(--shadow-dark-color);
+  --shadow-5: 0px var(--shadow-offset-5) 0px var(--shadow-dark-color);
+
+  --in-shadow-0: 0px var(--shadow-offset-0) 0px var(--shadow-dark-color);
+  --in-shadow-1: 0px calc(var(--shadow-offset-1) * -1) 0px var(--shadow-dark-color);
+  --in-shadow-2: 0px calc(var(--shadow-offset-2) * -1) 0px var(--shadow-dark-color);
+  --in-shadow-3: 0px calc(var(--shadow-offset-3) * -1) 0px var(--shadow-dark-color);
+  --in-shadow-4: 0px calc(var(--shadow-offset-4) * -1) 0px var(--shadow-dark-color);
+  --in-shadow-5: 0px calc(var(--shadow-offset-5) * -1) 0px var(--shadow-dark-color);
+
+  --inset-0: inset 0px var(--shadow-offset-0) 0px var(--shadow-dark-color);
+  --inset-1: inset 0px var(--shadow-offset-1) 0px var(--shadow-dark-color);
+  --inset-2: inset 0px var(--shadow-offset-2) 0px var(--shadow-dark-color);
+  --inset-3: inset 0px var(--shadow-offset-3) 0px var(--shadow-dark-color);
+  --inset-4: inset 0px var(--shadow-offset-4) 0px var(--shadow-dark-color);
+  --inset-5: inset 0px var(--shadow-offset-5) 0px var(--shadow-dark-color);
+
+  --neumo-inset-0:
+    inset 0px var(--shadow-offset-0) 0px var(--shadow-dark-color),
+    inset 0px var(--shadow-offset-0) 0px var(--shadow-light-color);
+  --neumo-inset-1:
+    inset 0px var(--shadow-offset-1) 0px var(--shadow-dark-color),
+    inset 0px calc(var(--shadow-offset-1) * -1) 0px var(--shadow-light-color);
+  --neumo-inset-2:
+    inset 0px var(--shadow-offset-2) 0px var(--shadow-dark-color)
+    /* ,
+    inset 0px calc(var(--shadow-offset-2) * -1) 0px var(--shadow-light-color); */
+  ;
+  --neumo-inset-3:
+    inset 0px var(--shadow-offset-3) 0px var(--shadow-dark-color),
+    inset 0px calc(var(--shadow-offset-3) * -1) 0px var(--shadow-light-color);
+  --neumo-inset-4:
+    inset 0px var(--shadow-offset-4) 0px var(--shadow-dark-color),
+    inset 0px calc(var(--shadow-offset-4) * -1) 0px var(--shadow-light-color);
+  --neumo-inset-5:
+    inset 0px var(--shadow-offset-5) 0px var(--shadow-dark-color),
+    inset 0px calc(var(--shadow-offset-5) * -1) 0px var(--shadow-light-color);
+
+  --primary-shadow-0: 0px var(--shadow-offset-0) 0px var(--primary-shadow-color);
+  --primary-shadow-1: 0px calc(var(--shadow-offset-1) * -1) 0px var(--primary-shadow-color);
+  --primary-shadow-2: 0px calc(var(--shadow-offset-2) * -1) 0px var(--primary-shadow-color);
+  --primary-shadow-3: 0px calc(var(--shadow-offset-3) * -1) 0px var(--primary-shadow-color);
+  --primary-shadow-4: 0px calc(var(--shadow-offset-4) * -1) 0px var(--primary-shadow-color);
+  --primary-shadow-5: 0px calc(var(--shadow-offset-5) * -1) 0px var(--primary-shadow-color);
+
+  --primary-outline-shadow-0: 0 0 0 var(--outline-offset-0) var(--primary-color);
+  --primary-outline-shadow-1: 0 0 0 var(--outline-offset-1) var(--primary-color);
+  --primary-outline-shadow-2: 0 0 0 var(--outline-offset-2) var(--primary-color);
+  --primary-outline-shadow-3: 0 0 0 var(--outline-offset-3) var(--primary-color);
+  --primary-outline-shadow-4: 0 0 0 var(--outline-offset-4) var(--primary-color);
+  --primary-outline-shadow-5: 0 0 0 var(--outline-offset-5) var(--primary-color);
+
+  --background-0: 0px var(--shadow-offset-0) 0px var(--bg-color);
+  --background-1: 0px var(--shadow-offset-1) 0px var(--bg-color);
+  --background-2: 0px var(--shadow-offset-2) 0px var(--bg-color);
+  --background-3: 0px var(--shadow-offset-3) 0px var(--bg-color);
+  --background-4: 0px var(--shadow-offset-4) 0px var(--bg-color);
+  --background-5: 0px var(--shadow-offset-5) 0px var(--bg-color);
+
+  --background-inset-0: inset 0px var(--shadow-offset-0) 0px var(--bg-color);
+  --background-inset-1: inset 0px var(--shadow-offset-1) 0px var(--bg-color);
+  --background-inset-2: inset 0px var(--shadow-offset-2) 0px var(--bg-color);
+  --background-inset-3: inset 0px var(--shadow-offset-3) 0px var(--bg-color);
+  --background-inset-4: inset 0px var(--shadow-offset-4) 0px var(--bg-color);
+  --background-inset-5: inset 0px var(--shadow-offset-5) 0px var(--bg-color);
+
+  --background-variant-inset-0: inset 0px var(--shadow-offset-0) 0px var(--bg-variant-color);
+  --background-variant-inset-1: inset 0px var(--shadow-offset-1) 0px var(--bg-variant-color);
+  --background-variant-inset-2: inset 0px var(--shadow-offset-2) 0px var(--bg-variant-color);
+  --background-variant-inset-3: inset 0px var(--shadow-offset-3) 0px var(--bg-variant-color);
+  --background-variant-inset-4: inset 0px var(--shadow-offset-4) 0px var(--bg-variant-color);
+  --background-variant-inset-5: inset 0px var(--shadow-offset-5) 0px var(--bg-variant-color);
+}

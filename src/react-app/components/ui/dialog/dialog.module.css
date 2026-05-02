@@ -1,0 +1,45 @@
+.dialog {
+  position: fixed;
+  display: block;
+  inset-inline-start: 0px;
+  inset-inline-end: 0px;
+  height: fit-content;
+  width: fit-content;
+  max-height: 90dvh;
+  border: none;
+  border-radius: 24px;
+  corner-shape: squircle;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  margin-block: auto;
+  margin-inline: auto;
+  padding: 1rem;
+  scale: 0;
+  visibility: collapse;
+  transition: scale var(--ease-200), visibility var(--ease-200);
+
+  &[open] {
+    scale: 1;
+    visibility: visible;
+  }
+
+  &::backdrop {
+    background-color: var(--shadow-dark-color);
+    opacity: 0.4;
+  }
+}
+
+.dialog-content {
+  overflow-y: auto;
+  max-height: calc(90dvh * 0.7);
+  margin-block-end: 2rem;
+}
+
+.close-button {
+  display: block;
+  width: 100%;
+}
+
+body:has(.dialog[open]) {
+  overflow: hidden;
+}

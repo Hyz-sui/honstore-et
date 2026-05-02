@@ -1,5 +1,5 @@
 import "./App.css";
-import { Footer } from "./components/features/footer/footer";
+import { Footer } from "./components/layouts/footer/footer";
 import { Honst } from "./components/features/honst/honst";
 import { Header } from "./components/layouts/header/header";
 import styles from "./App.module.css";

@@ -1,0 +1,33 @@
+.footer-note {
+  font-size: 0.8rem;
+  color: var(--main-variant-color);
+}
+
+.description {
+  white-space: pre-line;
+}
+
+.footer-u-list {
+  list-style: none;
+  margin-block: 1rem;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.credit-list {
+  max-height: 20rem;
+  overflow-y: auto;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  corner-shape: squircle;
+}
+
+.credit-list-content {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+  }
+}

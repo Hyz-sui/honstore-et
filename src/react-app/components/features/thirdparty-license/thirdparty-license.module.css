@@ -1,0 +1,21 @@
+.description {
+  margin-inline-start: 0;
+}
+
+.license-type {
+  font-size: 0.8rem;
+}
+
+.license-text {
+  font-size: 0.8rem;
+  max-height: 6rem;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  corner-shape: squircle;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}

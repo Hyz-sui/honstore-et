@@ -1,0 +1,98 @@
+.honst {
+  max-width: 64rem;
+  margin-block: 0;
+  margin-inline: auto;
+}
+
+.search-section {
+  margin-block-end: 2rem;
+}
+
+.search-input {
+  display: block;
+  width: 100%;
+}
+
+.search-label {
+  font-size: 1.25rem;
+  display: block;
+}
+
+.button-panel {
+  margin-inline: auto;
+  margin-block: 1rem;
+}
+
+.hidden-share-label {
+  display: none;
+}
+
+.share-ring-box {
+  position: relative;
+  align-self: center;
+  width: 100%;
+}
+
+.share-ring {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
+
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 1rem;
+  visibility: collapse;
+  inset: 0 0 0 0;
+  translate: 0 2.5rem;
+  opacity: 0;
+  background-color: var(--bg-variant-color);
+  box-shadow: var(--shadow-3);
+  transform-origin: center;
+  border-radius: 1rem;
+  transition: opacity var(--ease-200), visibility var(--ease-200);
+
+  &.share-ring-open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+.search-note {
+  font-size: 0.875rem;
+  color: var(--main-variant-color);
+  white-space: pre-line;
+  margin-block-end: 2rem;
+}
+
+.empty-favorite-card {
+  padding-inline: 1rem;
+  margin-block: 1rem;
+  margin-inline: auto;
+  width: fit-content;
+}
+
+.empty-favorite-card-icon {
+  font-size: 3rem;
+  margin-inline: auto;
+  width: fit-content;
+  margin-block: 0.5rem;
+}
+
+.search-links-section {
+  visibility: collapse;
+  opacity: 0;
+
+  transition: visibility var(--ease-200), opacity var(--ease-200);
+}
+
+.search-links-section-visible {
+  visibility: visible;
+  opacity: 1;
+}

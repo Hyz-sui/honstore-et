@@ -1,0 +1,20 @@
+:root {
+  --bg-color: light-dark(#fff8e4, #2c384b);
+  --bg-variant-color: light-dark(#ecdeb5, #101f38);
+  --main-color: light-dark(#1c1c1c, #e0e0e0);
+  --main-variant-color: light-dark(#2c2c2c, #d0d0d0);
+
+  --border-color: light-dark(#a0a0a0, #545454);
+
+  --highlight-color: light-dark(#c32e00, #ff6cc9);
+
+  --link-color: light-dark(#3951be, #8ad6ff);
+
+  --primary-color: light-dark(#3f4b8c, #fff581);
+  --on-primary-color: light-dark(#e0e0e0, #1c1c1c);
+
+  --shadow-dark-color: light-dark(#7b776d, #000000);
+  --shadow-light-color: light-dark(#ffffff, #7d7f8b);
+
+  --primary-shadow-color: light-dark(#23294f, #625d30);
+}

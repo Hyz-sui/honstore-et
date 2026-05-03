@@ -27,6 +27,10 @@ export const Footer = () => {
           {"までお知らせください。"}
         </p>
 
+        <p className={styles.description}>
+          <HyperLink href="https://github.com/Hyz-sui/honstore-et" openNew>GitHub</HyperLink>
+        </p>
+
         <p className="visually-hidden focus-to-show">
           <span className="visually-hidden">この後に長いクレジット表示があります。スキップするには以下のボタンで閉じてください。</span>
           <Button variant="outlined" onClick={() => aboutDialog.current?.close()}>

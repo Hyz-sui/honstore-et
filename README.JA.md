@@ -60,4 +60,4 @@
 
 ## ライセンス
 
-[AGPL-3.0](https://github.com/Hyz-sui/honstore-et/blob/main/LICENSE)
+[AGPL-3.0](LICENSE)

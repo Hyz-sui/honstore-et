@@ -63,4 +63,4 @@ Install dependencies and start the local development server.
 
 ## License
 
-[AGPL-3.0](https://github.com/Hyz-sui/honstore-et/blob/main/LICENSE)
+[AGPL-3.0](LICENSE)

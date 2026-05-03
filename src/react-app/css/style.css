@@ -16,7 +16,7 @@
   outline: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(.focus-to-show:is(:focus, :focus-within)) {
   position: fixed;
   opacity: 0;
   width: 4px;

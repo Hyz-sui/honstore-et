@@ -1,6 +1,6 @@
 # honstore-et
 
-[日本語](README.JA.MD)
+[日本語](README.JA.md)
 
 > [!Note]
 > *This is an AI-translated version of the original Japanese documentation.*

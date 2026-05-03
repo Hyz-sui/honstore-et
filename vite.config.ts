@@ -15,7 +15,9 @@ export default defineConfig({
         name: 'honst',
         short_name: 'honst',
         description: 'honstは、ワードを指定して各ネット書店/電子書籍ストアの検索・リアル書店の在庫検索のリンクを一覧できるアプリです。',
-        theme_color: '#fff8e4',
+        theme_color: '#2c384b',
+        background_color: '#2c384b',
+        display: 'standalone',
         icons: [
           {
             src: 'favicon.svg',

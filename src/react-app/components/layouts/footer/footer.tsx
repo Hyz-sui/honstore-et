@@ -27,6 +27,13 @@ export const Footer = () => {
           {"までお知らせください。"}
         </p>
 
+        <p className="visually-hidden focus-to-show">
+          <span className="visually-hidden">この後に長いクレジット表示があります。スキップするには以下のボタンで閉じてください。</span>
+          <Button variant="outlined" onClick={() => aboutDialog.current?.close()}>
+            閉じる
+          </Button>
+        </p>
+
         <h2>クレジット</h2>
         <dl className={styles.creditList}>
           {Object.entries({...additionalCredits, ...licenses}).map(([name, { version, license, text, homepage, repository }]) => (

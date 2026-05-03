@@ -16,7 +16,7 @@
   padding: 1rem;
   scale: 0;
   visibility: collapse;
-  transition: scale var(--ease-200), visibility var(--ease-200);
+  transition: scale var(--ease-200), visibility var(--ease-200), overlay var(--ease-200) allow-discrete;
 
   &[open] {
     scale: 1;
@@ -24,8 +24,18 @@
   }
 
   &::backdrop {
-    background-color: var(--shadow-dark-color);
-    opacity: 0.4;
+    background-color: color-mix(in srgb, var(--shadow-dark-color) 40%, transparent);
+    transition: opacity var(--ease-200);
+    opacity: 0;
+    backdrop-filter: blur(4px);
+  }
+
+  &[open]::backdrop {
+    opacity: 1;
+
+    @starting-style {
+      opacity: 0;
+    }
   }
 }
 

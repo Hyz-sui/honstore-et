@@ -30,7 +30,7 @@ Furthermore, by sharing the URL of your search state with others, it serves as a
 
 ## Development
 
-This project uses [React](https://react.dev/) for the frontend, [Hono](https://hono.dev/) for the backend, and runs on [Cloudflare Workers](https://www.cloudflare.com/ja-jp/developer-platform/products/workers/).
+This project uses [React](https://react.dev/) for the frontend, [Hono](https://hono.dev/) for the backend, and runs on [Cloudflare Workers](https://developers.cloudflare.com/workers/).
 
 ### Prerequisites
 

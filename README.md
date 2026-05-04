@@ -57,6 +57,8 @@ Install dependencies and start the local development server.
 
 - [encoding.js](https://github.com/polygonplanet/encoding.js): [MIT License](https://github.com/polygonplanet/encoding.js/blob/master/LICENSE)
 - [Nano ID](https://github.com/ai/nanoid): [MIT License](https://github.com/ai/nanoid/blob/main/LICENSE)
+- [Material Symbols](https://fonts.google.com/icons): [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+- [vite-plugin-pwa](https://github.com/vite-pwa/vite-plugin-pwa): [MIT License](https://github.com/vite-pwa/vite-plugin-pwa/blob/main/LICENSE)
 - [React](https://react.dev/): [MIT License](https://github.com/facebook/react/blob/main/LICENSE)
 - [Vite](https://vite.dev/): [MIT License](https://github.com/vitejs/vite/blob/main/LICENSE)
 - [Hono](https://hono.dev/): [MIT License](https://github.com/honojs/hono/blob/main/LICENSE)
